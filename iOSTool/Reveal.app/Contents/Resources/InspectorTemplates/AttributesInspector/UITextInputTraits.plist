@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SectionTitle</key>
+	<string>UITextInputTraits</string>
+	<key>SubSections</key>
+	<array>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Autocorrection</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>spellCheckingType</string>
+				<string>autocapitalizationType</string>
+				<string>autocorrectionType</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Keyboard</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>keyboardType</string>
+				<string>keyboardAppearance</string>
+				<string>returnKeyType</string>
+				<string>enablesReturnKeyAutomatically</string>
+				<string>secureTextEntry</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

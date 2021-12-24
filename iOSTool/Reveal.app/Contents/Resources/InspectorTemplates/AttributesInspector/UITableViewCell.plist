@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SectionTitle</key>
+	<string>UITableViewCell</string>
+	<key>SubSections</key>
+	<array>
+		<dict>
+			<key>SubSectionName</key>
+			<string></string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>reuseIdentifier</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string></string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>selectionStyle</string>
+				<string>accessoryType</string>
+				<string>editingAccessoryType</string>
+				<string>editingStyle</string>
+				<string>focusStyle</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string></string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>highlighted</string>
+				<string>selected</string>
+				<string>editing</string>
+				<string>showingDeleteConfirmation</string>
+				<string>showsReorderControl</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string></string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>indentationLevel</string>
+				<string>indentationWidth</string>
+				<string>shouldIndentWhileEditing</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Separator</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>separatorInset</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SectionTitle</key>
+	<string>UITableView</string>
+	<key>SubSections</key>
+	<array>
+		<dict>
+			<key>SubSectionName</key>
+			<string></string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>style</string>
+				<string>editing</string>
+				<string>cellLayoutMarginsFollowReadableWidth</string>
+				<string>remembersLastFocusedIndexPath</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Row</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>rowHeight</string>
+				<string>estimatedRowHeight</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Section</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>sectionHeaderHeight</string>
+				<string>estimatedSectionHeaderHeight</string>
+				<string>sectionFooterHeight</string>
+				<string>estimatedSectionFooterHeight</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Section Index</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>sectionIndexMinimumDisplayRowCount</string>
+				<string>sectionIndexColor</string>
+				<string>sectionIndexBackgroundColor</string>
+				<string>sectionIndexTrackingBackgroundColor</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Selection</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>allowsSelection</string>
+				<string>allowsMultipleSelection</string>
+				<string>allowsSelectionDuringEditing</string>
+				<string>allowsMultipleSelectionDuringEditing</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Separator</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>separatorStyle</string>
+				<string>separatorColor</string>
+				<string>separatorInset</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

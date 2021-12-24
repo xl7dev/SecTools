@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SectionTitle</key>
+	<string>WKWebView</string>
+	<key>SubSections</key>
+	<array>
+		<dict>
+			<key>SubSectionName</key>
+			<string></string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>title</string>
+				<string>URL</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Navigation</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>allowsBackForwardNavigationGestures</string>
+				<string>canGoBack</string>
+				<string>canGoForward</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string></string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>loading</string>
+				<string>hasOnlySecureContent</string>
+				<string>estimatedProgress</string>
+				<string>customUserAgent</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Integrating Using CocoaPods</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html{color:#333;line-height:1.6;font-size:112.5%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;font-family:"Avenir Next",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif}p,ul,ol,blockquote,iframe,img,pre{margin-bottom:2rem}a{color:#138adc;cursor:pointer}a:hover{color:#0b4f7e}a:active{color:#031420}h1{color:black;font-size:2rem;line-height:1.2;font-weight:normal;margin-bottom:1rem;font-family:"Avenir Next",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif}h2{color:#333;line-height:1.4;font-size:1.5rem;font-weight:normal;margin-bottom:1rem;margin-top:3rem;padding-bottom:1rem;border-bottom:1px solid #dcdcde;font-family:"Avenir Next",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif}h3{color:#8E8E93;line-height:1.4;font-size:1.2rem;font-weight:normal;margin-bottom:1rem;margin-top:2rem;font-family:"Avenir Next",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif}h4{color:black;font-weight:500;margin-bottom:1rem;font-family:"Avenir Next",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif}h5{color:#8E8E93;line-height:1;font-size:1rem;margin-bottom:1rem;font-weight:normal;letter-spacing:.2rem;text-transform:uppercase;font-family:"Avenir Next",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif}blockquote{color:#74747a;border-left:1rem solid #f6f6f7;padding-left:1rem;margin-left:-2rem;margin-top:2rem;margin-bottom:2rem}ul,ol{margin-left:-1rem;padding-left:1rem;margin-top:2rem;margin-bottom:2rem}li p{margin-bottom:1rem}img{max-width:150%;margin-left:-25%;margin-top:1rem;margin-bottom:2rem;border-radius:4px;box-shadow:0 1px 2px rgba(0,0,0,0.1),0 5px 15px rgba(0,0,0,0.15)}time{color:#8E8E93;display:block;font-weight:500;font-size:0.8rem;margin-bottom:.5rem}code{color:green;margin:0 .2rem;border-radius:4px;background:#f1f1f1;padding:.2rem .5rem;border:1px solid #e1e1e1;word-break:keep-all;white-space:pre}pre{margin:0 .2rem;border-radius:4px;background:#f1f1f1;padding:.5rem;border:1px solid #e1e1e1;overflow-y:scroll}pre code{background:none;border:none;padding:0}td{padding:.5rem;border-bottom:1px solid #8E8E93}hr{border:none;height:1px;width:100%;background-color:#8E8E93}b,strong{font-weight:500}body{max-width:640px;margin:0 auto;padding:4rem 2rem}@media (max-width: 1000px){img{max-width:100%;margin-left:auto;margin-right:auto}}
+    </style>
+</head>
+<body class="normal firstload">
+    <div id="wrapper"><h4><a href="Reveal Integration Guide.html">&laquo; Reveal Integration Guide</a></h4>
+<h1>CocoaPods</h1>
+<p>We maintain a CocoaPods Podspec for integrating Reveal into your Xcode projects.</p>
+<p>Our instructions assume that you've already configured your project or workspace for use with CocoaPods — if you haven't, <a href="https://guides.cocoapods.org/using/index.html">please do so now</a>.</p>
+<blockquote><p><strong>WARNING</strong>: Never ship a product which has been linked with the Reveal Server framework. The Podfile example below will only link the Reveal Server framework into builds of your app compiled using the "Debug" configuration.</p>
+</blockquote>
+<ol>
+<li><p>Add the following to your Podfile:</p>
+
+<pre><code> target 'YourMainAppTargetName' do
+     pod 'Reveal-SDK', :configurations => ['Debug']
+ end</code></pre>
+<blockquote><p>The <code>:configurations</code> parameter ensures that Reveal will only be linked into your Debug builds.</p>
+</blockquote>
+</li>
+<li><p>Run <code>pod install</code> in your project directory (or <code>pod update Reveal-SDK</code> if you've previously used CocoaPods with your project).</p>
+</li>
+</ol>
+<h2>Getting Help</h2>
+<p>If you have any problems or questions about integrating Reveal into your app, <a href="http://support.revealapp.com">head over to our support site</a>.</p>
+</div>
+</body>
+</html>

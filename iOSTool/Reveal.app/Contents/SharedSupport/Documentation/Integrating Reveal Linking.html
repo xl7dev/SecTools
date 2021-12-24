@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Integrating Reveal Linking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html{color:#333;line-height:1.6;font-size:112.5%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;font-family:"Avenir Next",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif}p,ul,ol,blockquote,iframe,img,pre{margin-bottom:2rem}a{color:#138adc;cursor:pointer}a:hover{color:#0b4f7e}a:active{color:#031420}h1{color:black;font-size:2rem;line-height:1.2;font-weight:normal;margin-bottom:1rem;font-family:"Avenir Next",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif}h2{color:#333;line-height:1.4;font-size:1.5rem;font-weight:normal;margin-bottom:1rem;margin-top:3rem;padding-bottom:1rem;border-bottom:1px solid #dcdcde;font-family:"Avenir Next",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif}h3{color:#8E8E93;line-height:1.4;font-size:1.2rem;font-weight:normal;margin-bottom:1rem;margin-top:2rem;font-family:"Avenir Next",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif}h4{color:black;font-weight:500;margin-bottom:1rem;font-family:"Avenir Next",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif}h5{color:#8E8E93;line-height:1;font-size:1rem;margin-bottom:1rem;font-weight:normal;letter-spacing:.2rem;text-transform:uppercase;font-family:"Avenir Next",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif}blockquote{color:#74747a;border-left:1rem solid #f6f6f7;padding-left:1rem;margin-left:-2rem;margin-top:2rem;margin-bottom:2rem}ul,ol{margin-left:-1rem;padding-left:1rem;margin-top:2rem;margin-bottom:2rem}li p{margin-bottom:1rem}img{max-width:150%;margin-left:-25%;margin-top:1rem;margin-bottom:2rem;border-radius:4px;box-shadow:0 1px 2px rgba(0,0,0,0.1),0 5px 15px rgba(0,0,0,0.15)}time{color:#8E8E93;display:block;font-weight:500;font-size:0.8rem;margin-bottom:.5rem}code{color:green;margin:0 .2rem;border-radius:4px;background:#f1f1f1;padding:.2rem .5rem;border:1px solid #e1e1e1;word-break:keep-all;white-space:pre}pre{margin:0 .2rem;border-radius:4px;background:#f1f1f1;padding:.5rem;border:1px solid #e1e1e1;overflow-y:scroll}pre code{background:none;border:none;padding:0}td{padding:.5rem;border-bottom:1px solid #8E8E93}hr{border:none;height:1px;width:100%;background-color:#8E8E93}b,strong{font-weight:500}body{max-width:640px;margin:0 auto;padding:4rem 2rem}@media (max-width: 1000px){img{max-width:100%;margin-left:auto;margin-right:auto}}
+    </style>
+</head>
+<body class="normal firstload">
+    <div id="wrapper"><h4><a href="Reveal Integration Guide.html">&laquo; Reveal Integration Guide</a></h4>
+<h1>Linking Reveal into your app</h1>
+<p>Linking Reveal's Server framework into your iOS or tvOS application is a quick and easy way to enable Reveal introspection.</p>
+<blockquote><p><strong>WARNING</strong>: Never ship a product which has been linked with the Reveal Server framework. The instructions below outline a way to use build configurations to isolate linking the framework to Debug builds.</p>
+</blockquote>
+<p>You'll need to perform the following steps for each target that you wish to use with Reveal:</p>
+<ol>
+<li><p>Launch Reveal and select either "iOS Library" or "tvOS Library" from the <strong>Help &rarr; Show Reveal Library in Finder</strong> menu. This will open a Finder window with the appropriate framework selected.</p>
+<p><img src="images/show-reveal-library-in-finder.jpg" alt="Show Reveal Library in Finder"></p>
+</li>
+<li><p><strong>Copy</strong> RevealServer.framework to the root directory of your project in Finder by holding the <strong>Option (⌥)</strong> key while dragging it.</p>
+<p><img src="images/drag-in-finder-reveal-framework.jpg" alt="Drag Reveal Library in Finder"></p>
+<blockquote><p><strong>Note</strong>: It is important to copy RevealServer.framework into your project. Make sure that you press and hold the Option key while dragging the file, otherwise the Finder will create an alias, not a copy.</p>
+<p>It is also very important to use Finder for this step. Adding the framework using Xcode's "Embedded Binaries" or "Linked Frameworks &amp; Libraries" settings introduces build settings that we'll be customizing later in this guide.</p>
+<p>You can also place the framework in a subdirectory to keep things organized. Just make sure to update the path environment variable on the run script phase (below) accordingly.</p>
+</blockquote>
+</li>
+<li><p>Open your project in Xcode, then select the project's icon in Xcode's Project Navigator.</p>
+</li>
+<li><p>Select the target you want to inspect using Reveal from the <strong>TARGETS</strong> list.</p>
+</li>
+<li><p>Select the <strong>Build Settings</strong> tab and add the following to the <strong>Debug</strong> configuration of the <strong>Framework Search Paths</strong> (<code>FRAMEWORK_SEARCH_PATHS</code>) setting:</p>
+
+<pre><code> $(inherited) $(SRCROOT)</code></pre>
+<p><img src="images/add_framework_search_paths.jpg" alt="Add framework search paths"></p>
+</li>
+<li><p>Still in the <strong>Build Settings</strong> tab, add the following to the <strong>Debug</strong> configuration of the <strong>Other Linker Flags</strong> (<code>OTHER_LDFLAGS</code>) setting:</p>
+
+<pre><code> -ObjC -weak_framework RevealServer</code></pre>
+<p><img src="images/add-linker-flags.jpg" alt="Add linker flags to target"></p>
+</li>
+<li><p>Still in the <strong>Build Settings</strong> tab, add the following to the <strong>Debug</strong> configuration of the <strong>Runpath Search Paths</strong> (<code>LD_RUNPATH_SEARCH_PATHS</code>) if it is not already present:</p>
+
+<pre><code> $(inherited) @executable_path/Frameworks</code></pre>
+</li>
+<li><p>Select the <strong>Build Phases</strong> tab and add a new <strong>Run Script</strong> phase — name it "Integrate Reveal Server" or something suitably descriptive. Paste in the following shell script:</p>
+
+<pre><code> export REVEAL_SERVER_FILENAME="RevealServer.framework"
+
+ # Update this path to point to the location of RevealServer.framework in your project.
+ export REVEAL_SERVER_PATH="${SRCROOT}/${REVEAL_SERVER_FILENAME}"
+
+ # If configuration is not Debug, skip this script.
+ [ "${CONFIGURATION}" != "Debug" ] && exit 0
+
+ # If RevealServer.framework exists at the specified path, run code signing script.
+ if [ -d "${REVEAL_SERVER_PATH}" ]; then
+   "${REVEAL_SERVER_PATH}/Scripts/copy_and_codesign_revealserver.sh"
+ else
+   echo "Cannot find RevealServer.framework, so Reveal Server will not be started for your app."
+ fi</code></pre>
+<blockquote><p><strong>Note</strong>: If you choose to keep RevealServer.framework elsewhere, follow the comments in the script to update the <code>REVEAL_SERVER_PATH</code> environment variable.</p>
+</blockquote>
+<p><img src="images/add-run-script-phase.jpg" alt="Add run script phase to target"></p>
+</li>
+<li><p>In Xcode, build and run your application using a scheme that is set to use the <strong>Debug</strong> configuration. If you are running your iOS or tvOS application on a device, ensure that it is on the same Wi-Fi network as Mac running Reveal, or connected to your Mac by its USB cable.</p>
+<p><img src="images/reveal-app-chooser.jpg" alt="Reveal App Chooser showing Soundstagram"></p>
+<p>If everything worked, you should be able to switch to Reveal and see your iOS or tvOS application listed in Reveal. Select your app and verify that you can see a snapshot of the app matching what you see in the simulator (or device).</p>
+</li>
+<li><p>Run your application again, this time using a scheme set to use the <strong>Release</strong> configuration. Verify that Reveal cannot connect to your application. If you can still connect, check to make sure <em>RevealServer.framework</em> is not listed in the <strong>Link Binary With Libraries</strong> section of the <strong>Build Phases</strong> tab.</p>
+</li>
+</ol>
+<p>No code needs to be added, nor any headers imported for Reveal integration. The framework will load automatically at launch and start the necessary Reveal services within your app.</p>
+<h2>Getting Help</h2>
+<p>If you have any problems or questions about integrating Reveal into your app, <a href="http://support.revealapp.com">head over to our support site</a>.</p>
+</div>
+</body>
+</html>

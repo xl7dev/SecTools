@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SectionTitle</key>
+	<string>UIWebView</string>
+	<key>SubSections</key>
+	<array>
+		<dict>
+			<key>SubSectionName</key>
+			<string></string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>scalesPageToFit</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Data Detector</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>dataDetectorTypes</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Options</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>allowsInlineMediaPlayback</string>
+				<string>allowsPictureInPictureMediaPlayback</string>
+				<string>allowsLinkPreview</string>
+				<string>mediaPlaybackRequiresUserAction</string>
+				<string>mediaPlaybackAllowsAirPlay</string>
+				<string>suppressesIncrementalRendering</string>
+				<string>keyboardDisplayRequiresUserAction</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Paging</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>pageCount</string>
+				<string>pageLength</string>
+				<string>paginationMode</string>
+				<string>paginationBreakingMode</string>
+				<string>gapBetweenPages</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,4 @@
+gevent
+hurry.filesize
+pycrypto
+protobuf

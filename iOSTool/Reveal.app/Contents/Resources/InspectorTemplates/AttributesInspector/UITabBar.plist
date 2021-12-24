@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SectionTitle</key>
+	<string>UITabBar</string>
+	<key>SubSections</key>
+	<array>
+		<dict>
+			<key>SubSectionName</key>
+			<string></string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>barStyle</string>
+				<string>barTintColor</string>
+				<string>selectedImageTintColor</string>
+				<string>isCustomizing</string>
+				<string>translucent</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Item Layout</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>itemPositioning</string>
+				<string>itemSpacing</string>
+				<string>itemWidth</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

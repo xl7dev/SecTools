@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SectionTitle</key>
+	<string>Layout</string>
+	<key>SubSections</key>
+	<array>
+		<dict>
+			<key>SubSectionName</key>
+			<string></string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>frame</string>
+				<string>bounds</string>
+				<string>center</string>
+				<string>transform</string>
+				<string>layoutMargins</string>
+				<string>preservesSuperviewLayoutMargins</string>
+				<string>semanticContentAttribute</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Autoresizing</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>autoresizingMask</string>
+				<string>autoresizesSubviews</string>
+				<string>translatesAutoresizingMaskIntoConstraints</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Auto Layout</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>iba_contentHuggingPriorities</string>
+				<string>iba_contentCompressionResistancePriorities</string>
+				<string>intrinsicContentSize</string>
+				<string>iba_alignmentRectForCurrentFrame</string>
+				<string>alignmentRectInsets</string>
+				<string>iba_participatingConstraints</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

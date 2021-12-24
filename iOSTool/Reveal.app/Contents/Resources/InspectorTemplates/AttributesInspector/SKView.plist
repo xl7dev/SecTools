@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SectionTitle</key>
+	<string>SKView</string>
+	<key>SubSections</key>
+	<array>
+		<dict>
+			<key>SubSectionName</key>
+			<string></string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>frameInterval</string>
+				<string>paused</string>
+				<string>asynchronous</string>
+				<string>allowsTransparency</string>
+				<string>ignoresSiblingOrder</string>
+				<string>shouldCullNonVisibleNodes</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Debug</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>showsFPS</string>
+				<string>showsNodeCount</string>
+				<string>showsDrawCount</string>
+				<string>showsFields</string>
+				<string>showsPhysics</string>
+				<string>showsQuadCount</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

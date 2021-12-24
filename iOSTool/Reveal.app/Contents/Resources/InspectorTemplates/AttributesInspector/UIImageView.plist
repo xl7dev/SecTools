@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SectionTitle</key>
+	<string>UIImageView</string>
+	<key>SubSections</key>
+	<array>
+		<dict>
+			<key>SubSectionName</key>
+			<string></string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>image</string>
+				<string>highlightedImage</string>
+				<string>highlighted</string>
+				<string>adjustsImageWhenAncestorFocused</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Animation</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>animationDuration</string>
+				<string>animationRepeatCount</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

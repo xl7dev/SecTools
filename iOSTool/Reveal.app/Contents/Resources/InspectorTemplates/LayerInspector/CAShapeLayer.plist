@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SectionTitle</key>
+	<string>CAShapeLayer</string>
+	<key>SubSections</key>
+	<array>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Line</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>lineCap</string>
+				<string>lineDashPattern</string>
+				<string>lineDashPhase</string>
+				<string>lineJoin</string>
+				<string>lineWidth</string>
+				<string>miterLimit</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Stroke</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>strokeColor</string>
+				<string>strokeStart</string>
+				<string>strokeEnd</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Fill</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>fillColor</string>
+				<string>fillRule</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

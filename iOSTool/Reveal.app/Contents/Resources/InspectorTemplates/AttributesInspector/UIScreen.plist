@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SectionTitle</key>
+	<string>UIScreen</string>
+	<key>SubSections</key>
+	<array>
+		<dict>
+			<key>SubSectionName</key>
+			<string></string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>applicationFrame</string>
+				<string>bounds</string>
+				<string>nativeBounds</string>
+				<string>scale</string>
+				<string>nativeScale</string>
+				<string>brightness</string>
+				<string>wantsSoftwareDimming</string>
+				<string>overscanCompensation</string>
+				<string>overscanCompensationInsets</string>
+				<string>supportsFocus</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Preferred Screen Mode</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>preferredMode</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Current Screen Mode</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>currentMode</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Available Screen Modes</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>availableModes</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

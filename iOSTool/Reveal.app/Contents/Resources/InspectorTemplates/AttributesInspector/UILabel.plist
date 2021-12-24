@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SectionTitle</key>
+	<string>UILabel</string>
+	<key>SubSections</key>
+	<array>
+		<dict>
+			<key>SubSectionName</key>
+			<string></string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>text</string>
+				<string>textColor</string>
+				<string>font</string>
+				<string>textAlignment</string>
+				<string>numberOfLines</string>
+				<string>enabled</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Shadow</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>shadowColor</string>
+				<string>shadowOffset</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Highlight</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>highlightedTextColor</string>
+				<string>highlighted</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string></string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>baselineAdjustment</string>
+				<string>lineBreakMode</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string></string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>adjustsFontSizeToFitWidth</string>
+				<string>adjustsLetterSpacingToFitWidth</string>
+				<string>allowsDefaultTighteningForTruncation</string>
+				<string>minimumScaleFactor</string>
+				<string>preferredMaxLayoutWidth</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SectionTitle</key>
+	<string>CATextLayer</string>
+	<key>SubSections</key>
+	<array>
+		<dict>
+			<key>SubSectionName</key>
+			<string></string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>string</string>
+				<string>font</string>
+				<string>fontSize</string>
+				<string>foregroundColor</string>
+				<string>wrapped</string>
+				<string>alignmentMode</string>
+				<string>truncationMode</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

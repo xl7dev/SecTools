@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SectionTitle</key>
+	<string>UIScrollView</string>
+	<key>SubSections</key>
+	<array>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Content</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>contentOffset</string>
+				<string>contentSize</string>
+				<string>contentInset</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Scroll Indicators</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>indicatorStyle</string>
+				<string>showsHorizontalScrollIndicator</string>
+				<string>showsVerticalScrollIndicator</string>
+				<string>scrollIndicatorInsets</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Scrolling</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>scrollEnabled</string>
+				<string>pagingEnabled</string>
+				<string>directionalLockEnabled</string>
+				<string>scrollsToTop</string>
+				<string>decelerationRate</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Bounce</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>bounces</string>
+				<string>alwaysBounceHorizontal</string>
+				<string>alwaysBounceVertical</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Zoom Scale</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>zoomScale</string>
+				<string>minimumZoomScale</string>
+				<string>maximumZoomScale</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Touch</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>bouncesZoom</string>
+				<string>delaysContentTouches</string>
+				<string>canCancelContentTouches</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Keyboard</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>keyboardDismissMode</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

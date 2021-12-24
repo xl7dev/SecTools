@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SectionTitle</key>
+	<string>UIView</string>
+	<key>SubSections</key>
+	<array>
+		<dict>
+			<key>SubSectionName</key>
+			<string></string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>contentMode</string>
+				<string>tag</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Interaction</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>userInteractionEnabled</string>
+				<string>multipleTouchEnabled</string>
+				<string>exclusiveTouch</string>
+				<string>focused</string>
+				<string>canBecomeFocused</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Color</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>alpha</string>
+				<string>backgroundColor</string>
+				<string>tintColor</string>
+				<string>tintAdjustmentMode</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Drawing</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>contentScaleFactor</string>
+				<string>opaque</string>
+				<string>hidden</string>
+				<string>clearsContextBeforeDrawing</string>
+				<string>clipsToBounds</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

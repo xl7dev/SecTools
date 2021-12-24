@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1</key>
+	<string>AlignLeft</string>
+	<key>1-superview</key>
+	<string>LeftToSuper</string>
+	<key>2</key>
+	<string>AlignRight</string>
+	<key>2-superview</key>
+	<string>RightToSuper</string>
+	<key>3</key>
+	<string>AlignTop</string>
+	<key>3-superview</key>
+	<string>TopToSuper</string>
+	<key>3-4</key>
+	<string>SpacingVert</string>
+	<key>4</key>
+	<string>AlignBottom</string>
+	<key>4-superview</key>
+	<string>BottomToSuper</string>
+	<key>4-3</key>
+	<string>SpacingVert</string>
+	<key>5</key>
+	<string>AlignLeft</string>
+	<key>5-superview</key>
+	<string>LeftToSuper</string>
+	<key>5-6</key>
+	<string>SpacingHoriz</string>
+	<key>6</key>
+	<string>AlignRight</string>
+	<key>6-superview</key>
+	<string>RightToSuper</string>
+	<key>6-5</key>
+	<string>SpacingHoriz</string>
+	<key>7</key>
+	<string>GuideWidth</string>
+	<key>7-8</key>
+	<string>AspectRatio</string>
+	<key>8</key>
+	<string>GuideHeight</string>
+	<key>8-7</key>
+	<string>AspectRatio</string>
+	<key>9</key>
+	<string>AlignVert</string>
+	<key>10</key>
+	<string>AlignHoriz</string>
+	<key>11</key>
+	<string>AlignHoriz</string>
+	<key>12</key>
+	<string>AlignHoriz</string>
+	<key>unknown</key>
+	<string>Unknown</string>
+</dict>
+</plist>

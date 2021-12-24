@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SectionTitle</key>
+	<string>MKMapView</string>
+	<key>SubSections</key>
+	<array>
+		<dict>
+			<key>SubSectionName</key>
+			<string></string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>mapType</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Behavior</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>showsBuildings</string>
+				<string>showsPointsOfInterest</string>
+				<string>showsUserLocation</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string></string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>zoomEnabled</string>
+				<string>scrollEnabled</string>
+				<string>rotateEnabled</string>
+				<string>pitchEnabled</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>State</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>userTrackingMode</string>
+				<string>userLocationVisible</string>
+				<string>annotationVisibleRect</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

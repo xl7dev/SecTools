@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SectionTitle</key>
+	<string>UIControl</string>
+	<key>SubSections</key>
+	<array>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Alignment</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>contentHorizontalAlignment</string>
+				<string>contentVerticalAlignment</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Content</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>selected</string>
+				<string>enabled</string>
+				<string>highlighted</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

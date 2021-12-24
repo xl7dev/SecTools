@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SectionTitle</key>
+	<string>UIPageControl</string>
+	<key>SubSections</key>
+	<array>
+		<dict>
+			<key>SubSectionName</key>
+			<string></string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>numberOfPages</string>
+				<string>currentPage</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Behavior</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>hidesForSinglePage</string>
+				<string>defersCurrentPageDisplay</string>
+			</array>
+		</dict>
+		<dict>
+			<key>SubSectionName</key>
+			<string>Colors</string>
+			<key>SubSectionAttributes</key>
+			<array>
+				<string>pageIndicatorTintColor</string>
+				<string>currentPageIndicatorTintColor</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
